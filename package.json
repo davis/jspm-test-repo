@@ -1,0 +1,31 @@
+{
+  "name": "jspm-test-repo",
+  "version": "1.0.0",
+  "main": "config.js",
+  "scripts": {
+    "postinstall": "jspm i",
+    "bundle": "jspm bundle-sfx src/main dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.15.7"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "backbone": "npm:backbone@^1.2.1",
+      "backbone.babysitter": "github:marionettejs/backbone.babysitter@^0.1.7",
+      "backbone.wreqr": "github:marionettejs/backbone.wreqr@^1.3.2",
+      "jquery": "github:components/jquery@^2.1.4",
+      "marionette": "github:marionettejs/backbone.marionette@^2.4.1",
+      "underscore": "npm:underscore@^1.8.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.4.3",
+      "babel-runtime": "npm:babel-runtime@^5.4.3",
+      "core-js": "npm:core-js@^0.9.10"
+    }
+  }
+}
