@@ -1,5 +1,5 @@
 System.config({
-  "baseURL": "/",
+  "defaultJSExtensions": true,
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
@@ -7,11 +7,9 @@ System.config({
     ]
   },
   "paths": {
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js",
-    "*": "*.js"
-  },
-  "defaultJSExtensions": true
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  }
 });
 
 System.config({
@@ -22,9 +20,14 @@ System.config({
     "backbone.babysitter": "github:marionettejs/backbone.babysitter@0.1.7",
     "backbone.wreqr": "github:marionettejs/backbone.wreqr@1.3.2",
     "core-js": "npm:core-js@0.9.14",
+    "handlebars": "github:components/handlebars.js@3.0.3",
+    "hbs": "github:davis/plugin-hbs@master",
     "jquery": "github:components/jquery@2.1.4",
     "marionette": "github:marionettejs/backbone.marionette@2.4.1",
     "underscore": "npm:underscore@1.8.3",
+    "github:davis/plugin-hbs@master": {
+      "handlebars": "github:components/handlebars.js@3.0.3"
+    },
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },

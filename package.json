@@ -9,15 +9,14 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "jspm": "^0.15.7"
-  },
   "jspm": {
     "directories": {},
     "dependencies": {
       "backbone": "npm:backbone@^1.2.1",
       "backbone.babysitter": "github:marionettejs/backbone.babysitter@^0.1.7",
       "backbone.wreqr": "github:marionettejs/backbone.wreqr@^1.3.2",
+      "handlebars": "github:components/handlebars.js@^3.0.3",
+      "hbs": "github:davis/plugin-hbs@master",
       "jquery": "github:components/jquery@^2.1.4",
       "marionette": "github:marionettejs/backbone.marionette@^2.4.1",
       "underscore": "npm:underscore@^1.8.3"
@@ -27,5 +26,8 @@
       "babel-runtime": "npm:babel-runtime@^5.4.3",
       "core-js": "npm:core-js@^0.9.10"
     }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.0-beta"
   }
 }

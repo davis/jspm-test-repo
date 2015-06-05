@@ -1,3 +1,9 @@
-import {ItemView} from 'marionette';
+import Backbone from 'backbone';
+import Marionette, {ItemView} from 'marionette';
 
-console.log(ItemView);
+import template from './template.hbs!';
+
+console.log(Backbone);
+console.log(Marionette, ItemView);
+
+console.log(template);
